@@ -67,8 +67,6 @@ schema is as follows:
 
 ![alt text](https://github.com/pmousarris/UniversityService/blob/main/Database%20Diagram.png)
 
-                 Figure 1 - Database Diagram
-
 # 4. API Endpoints
 
 The API consists of the following endpoints:
