@@ -1,0 +1,12 @@
+C:\Projects\UnicService\ModelUtil\bin\Debug\net6.0\ModelUtil.deps.json
+C:\Projects\UnicService\ModelUtil\bin\Debug\net6.0\ModelUtil.dll
+C:\Projects\UnicService\ModelUtil\bin\Debug\net6.0\ModelUtil.pdb
+C:\Projects\UnicService\ModelUtil\obj\Debug\net6.0\ModelUtil.csproj.AssemblyReference.cache
+C:\Projects\UnicService\ModelUtil\obj\Debug\net6.0\ModelUtil.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\UnicService\ModelUtil\obj\Debug\net6.0\ModelUtil.AssemblyInfoInputs.cache
+C:\Projects\UnicService\ModelUtil\obj\Debug\net6.0\ModelUtil.AssemblyInfo.cs
+C:\Projects\UnicService\ModelUtil\obj\Debug\net6.0\ModelUtil.csproj.CoreCompileInputs.cache
+C:\Projects\UnicService\ModelUtil\obj\Debug\net6.0\ModelUtil.dll
+C:\Projects\UnicService\ModelUtil\obj\Debug\net6.0\refint\ModelUtil.dll
+C:\Projects\UnicService\ModelUtil\obj\Debug\net6.0\ModelUtil.pdb
+C:\Projects\UnicService\ModelUtil\obj\Debug\net6.0\ref\ModelUtil.dll

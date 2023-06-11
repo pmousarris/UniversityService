@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "ce816dc8-cfe5-4971-a5c7-8dee55ff9bf9",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27882659"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"alice.georgiou@outlook.com\",\r\n  \"password\": \"password4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7232/Login/GetToken",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7232",
+					"path": [
+						"Login",
+						"GetToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetStudents",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiI2MTJkMDY3MS03Y2UzLTRiZjYtOTczNC03ZjQ4NmM3OTg2Y2UiLCJpYXQiOiI2LzkvMjAyMyA5OjI0OjUyIFBNIiwiVXNlcklkIjoiOWU3NjI1MTgtZDJmMy00ODQyLTkwNTgtZDkxZDYyZTEyMTg3IiwiVXNlclJvbGUiOiJTdHVkZW50IiwiZXhwIjoxNjg2MzQ2NDkyLCJpc3MiOiJKV1RBdXRoZW50aWNhdGlvblNlcnZlciIsImF1ZCI6IkpXVFNlcnZpY2VQb3N0bWFuQ2xpZW50In0.gEvvNw9iwvi8CDHExkOhx85-P891YFn4gjKugnetUfg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"PageNumber\": 1,\r\n   \"PageSize\": 20,\r\n   \"SortColumn\": \"lastName\",\r\n   \"SortDescending\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7232/Student/GetStudents",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7232",
+					"path": [
+						"Student",
+						"GetStudents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetClasses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiJhM2FiODgyOS0wOTEzLTQ1NjAtYTEwZS0xYmQ5MGMzODdiMjEiLCJpYXQiOiI2LzkvMjAyMyAyOjU5OjQ2IFBNIiwiVXNlcklkIjoiOWU3NjI1MTgtZDJmMy00ODQyLTkwNTgtZDkxZDYyZTEyMTg3IiwiVXNlclJvbGUiOiJTdHVkZW50IiwiZXhwIjoxNjg2MzIzMzg2LCJpc3MiOiJKV1RBdXRoZW50aWNhdGlvblNlcnZlciIsImF1ZCI6IkpXVFNlcnZpY2VQb3N0bWFuQ2xpZW50In0.MMbsVKXlvdlXkQIEXSOvu6p3Fv794c_e_wQ68MSNJsU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7232/Class/GetClasses",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7232",
+					"path": [
+						"Class",
+						"GetClasses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetClassesWithAssignedLecturers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiI3ODYxODZjYy0zNDc0LTRkNzMtYjRiMi1hMzVkZDgwZDJlODkiLCJpYXQiOiI2LzEwLzIwMjMgNzo0ODo1OCBQTSIsIlVzZXJJZCI6IjhjZWRkNDdlLWY4YjYtNDM1Mi04ZWJhLTc5NTdhZDRkOWE5YSIsIlVzZXJSb2xlIjoiTGVjdHVyZXIiLCJleHAiOjE2ODY0MjcxMzgsImlzcyI6IkpXVEF1dGhlbnRpY2F0aW9uU2VydmVyIiwiYXVkIjoiSldUU2VydmljZVBvc3RtYW5DbGllbnQifQ.jCkZquLZxoNG9kfpRZ6oSvuTG9drSNbHXp_UhO8XSFo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"AcademicPeriodId\": null,\r\n   \"ShowOnlyTakenClasses\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7232/Class/GetClassesWithAssignedLecturers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7232",
+					"path": [
+						"Class",
+						"GetClassesWithAssignedLecturers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
