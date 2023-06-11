@@ -65,6 +65,7 @@ The database schema consists of four main tables: Users, Courses,
 Sections, AcademicPeriods, and SectionUsers. The diagram of database
 schema is as follows:
 
+![alt text](https://github.com/pmousarris/UniversityService/blob/main/Database%20Diagram.png)
 <img src="media/image1.png" style="width:3.56361in;height:3.64394in" alt="A picture containing text, screenshot, diagram, parallel Description automatically generated" />
 
 Figure 1 - Database Diagram
