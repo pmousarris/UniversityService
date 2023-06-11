@@ -79,7 +79,7 @@ Authorization header (Type: Bearer Token) for subsequent requests to
 access protected resources. The body of the request should contain the
 user's credentials (username and password).
 
-POST /Student/GetStudents - Retrieves a list of students and displays
+POST /Student/GetStudents - Retrieves a list of students, including authenticated student and displays
 user details based on user role.
 
 POST /Class/GetClasses - Retrieves a list of classes with the option to
